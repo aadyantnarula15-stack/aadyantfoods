@@ -4704,3 +4704,16 @@ input, select, textarea {
   max-height: 70px;
   width: auto;
 }
+#intro {
+  background-image: none !important;
+  background-color: #ffffff;
+}
+		#intro {
+  background-image: url("../images/rice-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+		#intro {
+  min-height: auto;
+  padding: 5rem 0;
+}
