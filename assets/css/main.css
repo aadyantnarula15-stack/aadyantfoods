@@ -3285,6 +3285,54 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
+    /* ADD THESE LINES AT THE TOP */
+    background-image: url('../../images/rice-bg.jpg'); /* path from main.css to image */
+    background-size: cover;        /* scale to cover entire #intro */
+    background-position: center;   /* center the image */
+    background-repeat: no-repeat;  
+    min-height: 100vh;             /* keep full screen height */
+
+    /* KEEP ALL EXISTING STYLES BELOW */
+    color: #ffffff;
+    padding: 8rem 4rem 6rem 4rem;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-justify-content: -moz-flex-end;
+    -webkit-justify-content: -webkit-flex-end;
+    -ms-justify-content: -ms-flex-end;
+    justify-content: flex-end;
+    position: relative;
+    cursor: default;
+    text-align: center;
+    z-index: 1;
+    /* ... rest of your existing styles ... */
+}
+#intro::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3); /* adjust opacity if needed */
+    z-index: 0;
+}
+#intro h1, #intro p, #intro .actions {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+#intro {
 		color: #ffffff;
 		padding: 8rem 4rem 6rem 4rem ;
 		-moz-align-items: center;
@@ -4686,4 +4734,5 @@ input, select, textarea {
 			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
+
 
