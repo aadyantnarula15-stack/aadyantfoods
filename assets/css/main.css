@@ -5,6 +5,7 @@
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
 */
 
 html, body, div, span, applet, object,
@@ -4686,4 +4687,20 @@ input, select, textarea {
 			visibility: visible;
 		}
 
-	}
+/* Fix logo size and alignment */
+#header .logo img {
+  max-height: 70px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+		/* Ensure logo link behaves properly */
+#header .logo {
+  display: block;
+  text-align: center;
+}
+
+#header .logo img {
+  max-height: 70px;
+  width: auto;
+}
