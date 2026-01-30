@@ -4717,3 +4717,28 @@ input, select, textarea {
   min-height: auto;
   padding: 5rem 0;
 }
+		/* Ensure header & logo are always visible on mobile */
+#header {
+  position: relative;
+  z-index: 1000;
+}
+
+#intro {
+  position: relative;
+  z-index: 1;
+}
+		@media screen and (max-width: 736px) {
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+  }
+
+  #intro {
+    padding-top: 6rem;
+  }
+}
+		
+
