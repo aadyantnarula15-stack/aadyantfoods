@@ -257,16 +257,3 @@
 
 
 })(jQuery);
-// Founder section scroll animation
-$(window).on('scroll', function () {
-	var founderSection = $('#founder');
-
-	if (founderSection.length) {
-		var sectionTop = founderSection.offset().top;
-		var scrollPos = $(window).scrollTop() + $(window).height() * 0.8;
-
-		if (scrollPos > sectionTop) {
-			founderSection.addClass('visible');
-		}
-	}
-});
