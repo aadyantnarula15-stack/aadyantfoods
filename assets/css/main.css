@@ -4806,3 +4806,19 @@ input, select, textarea {
 #products.posts article {
     width: 100% !important;
 }
+		/* Premium horizontal product layout */
+.product-flex {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.product-image img {
+    width: 320px;
+    border-radius: 6px;
+}
+
+.product-content {
+    flex: 1;
+}
+
