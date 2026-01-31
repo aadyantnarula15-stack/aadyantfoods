@@ -4769,5 +4769,15 @@ input, select, textarea {
 #products .button {
 	transition: all 0.3s ease;
 }
+		/* Fix spacing in footer contact section */
+#footer p {
+    line-height: 1.9;
+    margin-bottom: 1.2rem;
+}
+
+#footer h3 {
+    margin-bottom: 1.5rem;
+}
 		
+
 
